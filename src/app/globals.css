@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+/* Make PT Serif the global default font */
+* {
+  font-family: var(--font-pt-serif), serif;
+}
+

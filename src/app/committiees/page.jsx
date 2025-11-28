@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Commit from "../committiescomponent/committie";
 
 function page() {
   return (
-    <div>page</div>
-  )
+    <div>
+      <Commit />
+    </div>
+  );
 }
 
-export default page
+export default page;

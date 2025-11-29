@@ -1,10 +1,17 @@
-import React from 'react'
+import ImageSlider from './Homecomponents/Sliding';
+import React from 'react';
+import About from '@/app/Homecomponents/About'
+
 
 function page() {
   return (
-    <div>
-      <h1>Hello</h1>
+    <>
+    <div className="py-10">
+      <ImageSlider />
     </div>
+    <About/>
+    </>
+
   )
 }
 

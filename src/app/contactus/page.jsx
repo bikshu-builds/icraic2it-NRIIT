@@ -1,9 +1,9 @@
 import React from 'react'
 
-function page() {
+function contactus() {
   return (
-    <div>page</div>
+    <div>contactus</div>
   )
 }
 
-export default page
+export default contactus

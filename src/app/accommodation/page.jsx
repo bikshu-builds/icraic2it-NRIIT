@@ -1,8 +1,13 @@
 import React from 'react'
+import Accomponent from '../Accomponent/Ac'
+import BudgetComponent from '../BudgetComponent/budget'
 
 function page() {
   return (
-    <div>page</div>
+    <div>
+      <Accomponent/>
+      <BudgetComponent/>
+    </div>
   )
 }
 

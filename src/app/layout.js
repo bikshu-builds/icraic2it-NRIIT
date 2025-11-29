@@ -1,14 +1,13 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { PT_Serif } from "next/font/google";
+import Navbar from "./Homecomponents/Navbar";
+import Footer from "./Homecomponents/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const ptSerif = PT_Serif({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-pt-serif",
 });
 
 export const metadata = {
@@ -19,10 +18,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${ptSerif.variable} antialiased`}>
+        <Navbar />
+        <main className="pt-1">
+      {children}
+    </main>
+    <Footer/>
+
       </body>
     </html>
   );

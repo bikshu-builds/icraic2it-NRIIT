@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Author from "../authorsguidelinescomponents/authorsguidelines"
 
 function page() {
   return (
-    <div>page</div>
+    <div>
+        <Author/>
+    </div>
   )
 }
 

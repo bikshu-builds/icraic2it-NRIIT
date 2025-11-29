@@ -12,13 +12,13 @@ export default function Navbar() {
   const navLinks = [
     { label: "Home", link: "/" },
     { label: "About", link: "/about" },
-    { label: "Committees", link: "/committees" },
+    { label: "Committees", link: "/committiees" },
     { label: "Location", link: "/location" },
-    { label: "Authors Guidelines", link: "/authors-guidelines" },
+    { label: "Authors Guidelines", link: "/authorsguidelines" },
     { label: "Registration", link: "/registration" },
     { label: "Awards", link: "/awards" },
     { label: "Accommodation", link: "/accommodation" },
-    { label: "Contact Us", link: "/contact-us" },
+    { label: "Contact Us", link: "/contactus" },
     { label: "Gallery", link: "/gallery" },
     { label: "Brochure", link: "/brochure" },
   ];

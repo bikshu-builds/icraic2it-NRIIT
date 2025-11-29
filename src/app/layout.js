@@ -2,6 +2,7 @@ import "./globals.css";
 import { PT_Serif } from "next/font/google";
 import Navbar from "./Homecomponents/Navbar";
 import Footer from "./Homecomponents/Footer";
+import ScrollToTop from "./ScrollToTop"; // ⭐ ADD THIS
 
 const ptSerif = PT_Serif({
   subsets: ["latin"],
@@ -19,12 +20,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${ptSerif.variable} antialiased`}>
+        <ScrollToTop /> {/* ⭐ Always scroll to top */}
         <Navbar />
-        <main className="pt-1">
-      {children}
-    </main>
-    <Footer/>
-
+        <main className="pt-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );

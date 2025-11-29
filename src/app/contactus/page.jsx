@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Map from "../Locationcomponent/map";
 
 function contactus() {
   return (
-    <div>contactus</div>
-  )
+    <div>
+      <Map />
+    </div>
+  );
 }
 
-export default contactus
+export default contactus;

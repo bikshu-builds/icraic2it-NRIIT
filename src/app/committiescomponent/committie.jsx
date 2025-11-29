@@ -132,12 +132,12 @@ export default function CommitteesPage() {
             </div>
 
             {/* Names (super compact styling) */}
-            <div className="text-sm space-y-1 leading-tight">
+            <div className="text-sm space-y-1 leading-tight p-4">
               {sec.members.map((m, i) => (
                 <p
                   key={i}
-                  className="pl-2 border-l"
-                  style={{ borderColor: "#EB1165" }}
+                  className="list-disc list-item"
+                  style={{ borderColor: "#EB1165", }}
                 >
                   {m}
                 </p>

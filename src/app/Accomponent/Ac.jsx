@@ -161,7 +161,7 @@ export default function HotelsStatsSection() {
                   {/* Image */}
                   <div className="md:w-5/12 w-full">
                     <img
-                      src={`/images/${hotel.image}`}
+                      src={`${hotel.image}`}
                       alt={hotel.name}
                       loading="lazy"
                       className="w-full h-56 md:h-48 object-cover"

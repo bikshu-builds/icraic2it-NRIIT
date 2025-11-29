@@ -55,7 +55,7 @@ const hotels = [
   {
     name: 'Hotel Midcity',
     url: 'https://www.hotelmidcity.com/',
-    image: '/Location/1.jpeg',
+    image: '/1.jpeg',
     rating: 3.7,
     location: 'Bunder Road',
     amenities: ['AC', 'WiFi', 'Lift'],
@@ -141,7 +141,7 @@ const hotels = [
     name: 'Hotel Sun Square (Goibibo)',
     url:
       'https://www.goibibo.com/hotels/sun-square-hotel-in-vijayawada-5808355584631181082/',
-    image: '/Location/2.jpeg',
+    image: '/2.jpeg',
     rating: 3.8,
     location: 'Business District',
     amenities: ['Business', 'WiFi', 'AC'],

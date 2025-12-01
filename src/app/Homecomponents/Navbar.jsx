@@ -29,7 +29,7 @@ export default function Navbar() {
       
       {/* 🔹 TITLE */}
       <h1 className="text-center px-4 py-3 font-extrabold text-blue-950 leading-tight text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px]">
-        International Conference on Recent Advancements in Artificial Intelligence,
+        4th International Conference on Recent Advancements in Artificial Intelligence,
         Computational Intelligence, and Inclusive Technologies |
         <span className="text-[#EB1165] font-bold"> ICRAIC2IT - 2026</span>
       </h1>

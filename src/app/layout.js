@@ -19,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${ptSerif.variable} antialiased`}>
+      <body className={`${ptSerif.variable} antialiased text-1xl`}>
         <ScrollToTop /> {/* ⭐ Always scroll to top */}
         <Navbar />
         <main className="pt-1">{children}</main>

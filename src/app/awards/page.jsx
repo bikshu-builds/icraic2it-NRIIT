@@ -20,7 +20,7 @@ export default function AwardsPage() {
       </p>
 
       {/* MODERN AWARD SECTION */}
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 gap-8">
         {/* BEST PRESENTATION */}
         <div className="relative bg-white rounded-2xl shadow-xl p-7 transition transform hover:scale-[1.04] hover:shadow-2xl">
           {/* Ribbon */}
@@ -34,39 +34,16 @@ export default function AwardsPage() {
           <div className="text-center mt-6">
             <div className="text-5xl mb-4">🏆</div>
             <h3 className="text-xl font-bold mb-2" style={{ color: "#EB1165" }}>
-              Best Presentation Award
+              Best Presentation Awards
             </h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
-              Awarded for the most inspiring, effective, and professional
-              presentation of the entire conference. The Conference Chair
-              selects the winner based on evaluation committee scores and
-              overall paper quality.
+            <p className="text-gray-600 text-1xl leading-relaxed">
+              Presented to individuals who demonstrated the highest level of clarity, professionalism, and impact during their conference presentations. The Conference Chair selects the 1st and 2nd award recipients based on evaluation committee scoring, content quality, and overall delivery.
             </p>
           </div>
         </div>
 
         {/* SESSION'S BEST PAPER */}
-        <div className="relative bg-white rounded-2xl shadow-xl p-7 transition transform hover:scale-[1.04] hover:shadow-2xl">
-          {/* Ribbon */}
-          <div
-            className="absolute -top-3 left-6 px-4 py-1 text-white text-sm font-bold rounded-full shadow-md"
-            style={{ backgroundColor: "#EB1165" }}
-          >
-            Session Award
-          </div>
 
-          <div className="text-center mt-6">
-            <div className="text-5xl mb-4">🎖️</div>
-            <h3 className="text-xl font-bold mb-2" style={{ color: "#EB1165" }}>
-              Session’s Best Paper Award
-            </h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
-              Given to the top-scoring presentation in each session based on
-              evaluation scores by the session chair and the expert panel
-              members.
-            </p>
-          </div>
-        </div>
 
         {/* BEST POSTER */}
         <div className="relative bg-white rounded-2xl shadow-xl p-7 transition transform hover:scale-[1.04] hover:shadow-2xl">
@@ -83,7 +60,7 @@ export default function AwardsPage() {
             <h3 className="text-xl font-bold mb-2" style={{ color: "#EB1165" }}>
               Best Poster Award
             </h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className="text-gray-600 text-1xl leading-relaxed">
               Awarded to the most creative, informative, and visually clear
               poster aligned with the conference theme. Winners receive
               appreciation certificates.

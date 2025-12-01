@@ -2,11 +2,14 @@ export default function MapPage() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-10">
       {/* PAGE TITLE */}
+
+      
+      
       <h1
         className="text-4xl font-extrabold text-center mb-10"
         style={{ color: "#EB1165" }}
       >
-        Conference Venue
+        Contact Us
       </h1>
 
       {/* SIDE-BY-SIDE MAP + VENUE DETAILS */}
@@ -28,11 +31,19 @@ export default function MapPage() {
 
         {/* RIGHT SIDE — VENUE DETAILS */}
         <div className="flex flex-col justify-center">
+          
+          <h2 className="text-1xl  mb-3" style={{ color: "black" }}>
+          Dr. K. V. Sambasiva Rao, Professor & Dean, CSE, NRIIT- kvsrao@nriit.edu.in
+          </h2>
+          <h2 className="text-1xl  mb-3" style={{ color: "black" }}>
+            Dr. D. Suneetha, Professor & HOD, CSE, NRIIT- hod.csenriit@gmail.com
+          </h2>
+
           <h2 className="text-2xl font-bold mb-3" style={{ color: "#EB1165" }}>
             NRI Institute of Technology
           </h2>
 
-          <p className="text-gray-800 text-[15px] leading-relaxed">
+          <p className="text-gray-800 text-1xl leading-relaxed">
             Pothavarappadu, Agiripalli Mandalam
             <br />
             Krishna District, Andhra Pradesh, India
@@ -40,7 +51,7 @@ export default function MapPage() {
             Pin – 521212
           </p>
 
-          <p className="mt-4 text-gray-800 text-[15px]">
+          <p className="mt-4 text-gray-800 text-1xl">
             <strong>Coordinates:</strong>
             <br />
             Primary: 16.66327986299729, 80.73777642559249
@@ -48,7 +59,7 @@ export default function MapPage() {
             Secondary: 16.663338876474548, 80.7378364640956
           </p>
 
-          <p className="mt-4 text-gray-700 text-sm">
+          <p className="mt-4 text-gray-700 text-1xl">
             The campus is conveniently accessible from Vijayawada city and is
             surrounded by serene greenery, making it an ideal location for
             academic and professional events.

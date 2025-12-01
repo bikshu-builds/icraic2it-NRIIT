@@ -53,10 +53,11 @@ export default function RegistrationPage() {
           {/* Header */}
           <div className="flex items-start justify-between gap-6">
             <div className="flex-1">
+              
               <h1 className="text-2xl sm:text-3xl font-extrabold" style={{ color: '#EB1165' }}>
                 Conference Registration
               </h1>
-              <p className="mt-2 text-sm text-gray-800 max-w-2xl">
+              <p className="mt-2 text-1xl text-gray-800 max-w-2xl">
                 The authors must agree that if the paper is accepted for oral/ poster presentation, at least one of the authors will register for the conference and present the paper at conference venue by completing the two step registration process as mentioned below. Co−authors and other persons intending to attend the conference can register as Listeners (Attendee)
               </p>
 
@@ -74,13 +75,13 @@ export default function RegistrationPage() {
                 href="https://forms.gle/EtVwNHoA8RNn6EUT6"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="px-3 py-2 rounded-md text-sm"
+                className="px-3 py-2 rounded-md text-1xl"
                 style={{ background: '#EB1165', color: '#fff' }}
               >
                 Open Registration Form
               </a>
 
-              <div className="text-xs text-gray-600 mt-2">{copied}</div>
+              <div className="text-1xl text-gray-600 mt-2">{copied}</div>
             </div>
           </div>
 
@@ -148,35 +149,35 @@ export default function RegistrationPage() {
 
                     <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
                       <div className="p-3 border rounded-sm bg-gray-50">
-                        <div className="text-xs text-gray-600">Step 1 — Fee Submission</div>
-                        <div className="mt-2 text-sm font-medium">{bank.beneficiary}</div>
-                        <div className="mt-1 text-xs text-gray-600">Bank: {bank.bankName}</div>
+                        <div className="text-1xl text-gray-600">Step 1 — Fee Submission</div>
+                        <div className="mt-2 text-1xl font-medium">{bank.beneficiary}</div>
+                        <div className="mt-1 text-1xl text-gray-600">Bank: {bank.bankName}</div>
 
                         <div className="mt-2 flex gap-2">
-                          <button onClick={() => setShowBankModal(true)} className="text-sm px-2 py-1 border rounded" style={{ borderColor: '#EB1165', color: '#EB1165' }}>
+                          <button onClick={() => setShowBankModal(true)} className="text-1xl px-2 py-1 border rounded" style={{ borderColor: '#EB1165', color: '#EB1165' }}>
                             View/Copy Bank Details
                           </button>
 
-                          <button onClick={() => copyToClipboard('Account Number', bank.accountNumber)} className="text-sm px-2 py-1 border rounded">
+                          <button onClick={() => copyToClipboard('Account Number', bank.accountNumber)} className="text-1xl px-2 py-1 border rounded">
                             Copy Account
                           </button>
                         </div>
 
-                        <div className="mt-2 text-xs text-gray-600">Keep payment UTR/receipt for the form.</div>
+                        <div className="mt-2 text-1xl text-gray-600">Keep payment UTR/receipt for the form.</div>
                       </div>
 
                       <div className="p-3 border rounded-sm">
-                        <div className="text-xs text-gray-600">Step 2 — Fill Form</div>
+                        <div className="text-1xl text-gray-600">Step 2 — Fill Form</div>
                         <a href="https://forms.gle/EtVwNHoA8RNn6EUT6" target="_blank" rel="noreferrer noopener" className="inline-block mt-2 px-3 py-1 rounded text-sm" style={{ background: '#EB1165', color: 'white' }}>
                           Open Registration Form
                         </a>
 
-                        <div className="mt-2 text-xs text-gray-600">Upload UTR/transaction reference in the form where requested.</div>
+                        <div className="mt-2 text-1xl text-gray-600">Upload UTR/transaction reference in the form where requested.</div>
                       </div>
                     </div>
 
                     {/* Tiny summary / notes */}
-                    <div className="mt-4 text-xs text-gray-700 space-y-2">
+                    <div className="mt-4 text-1xl text-gray-700 space-y-2">
                       <div>* At least one author must register & present the paper at the venue.</div>
                       <div>* No modification in paper after final submission date.</div>
                       <div>* Publication options: Scopus indexed proceedings (publication fee) or Online Proceedings with ISBN (non-Scopus).</div>
@@ -190,9 +191,9 @@ export default function RegistrationPage() {
                     <h2 className="text-lg font-semibold" style={{ color: '#EB1165' }}>Registration Fees — Compact View</h2>
 
                     <div className="mt-3 overflow-x-auto">
-                      <table className="w-full text-sm table-fixed">
+                      <table className="w-full text-1xl table-fixed">
                         <thead>
-                          <tr className="text-left text-xs text-gray-600">
+                          <tr className="text-left text-1xl text-gray-600">
                             <th className="w-2/5 px-2 py-2">Category</th>
                             <th className="w-1/5 px-2 py-2">India — Author (Rs.)</th>
                             <th className="w-1/5 px-2 py-2">India — Listener (Rs.)</th>
@@ -205,22 +206,22 @@ export default function RegistrationPage() {
                             <td className="px-2 py-2">Students / Research Scholars</td>
                             <td className="px-2 py-2">1000</td>
                             <td className="px-2 py-2">1000</td>
-                            <td className="px-2 py-2">$50</td>
-                            <td className="px-2 py-2">$50</td>
+                            <td className="px-2 py-2">$75</td>
+                            <td className="px-2 py-2">$75</td>
                           </tr>
                           <tr className="border-t bg-white">
                             <td className="px-2 py-2">Academician</td>
                             <td className="px-2 py-2">1500</td>
                             <td className="px-2 py-2">1000</td>
-                            <td className="px-2 py-2">$50</td>
-                            <td className="px-2 py-2">$50</td>
+                            <td className="px-2 py-2">$75</td>
+                            <td className="px-2 py-2">$75</td>
                           </tr>
                           <tr className="border-t bg-gray-50">
                             <td className="px-2 py-2">Industry Professional</td>
                             <td className="px-2 py-2">3000</td>
                             <td className="px-2 py-2">2500</td>
-                            <td className="px-2 py-2">$50</td>
-                            <td className="px-2 py-2">$50</td>
+                            <td className="px-2 py-2">$75</td>
+                            <td className="px-2 py-2">$75</td>
                           </tr>
 
                           <tr className="border-t bg-white">

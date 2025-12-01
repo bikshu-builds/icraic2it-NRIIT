@@ -101,6 +101,7 @@ export default function Gallery() {
   const [activeConference, setActiveConference] = useState(1);
   const [images1, setImages1] = useState([]);
   const [images2, setImages2] = useState([]);
+  const [active, setActive] = useState(false);
 
   useEffect(() => {
     // initialize images (keeps component fast on SSR + hydration)
@@ -142,6 +143,18 @@ export default function Gallery() {
           >
             2nd Conference
           </button>
+       <button
+      className={`px-4 py-2 rounded-md text-sm font-medium transition ${
+        active
+          ? "bg-[#2563eb] text-white shadow"
+          : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+      }`}
+      onClick={() => setActive(!active)}
+    >
+      <a href="https://nriit.edu.in/quadnext-2026/">
+        3rd Conference
+      </a>
+    </button>
         </div>
 
         {/* Title & date */}

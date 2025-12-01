@@ -1,7 +1,7 @@
 // components/HotelsStatsSection.jsx
-'use client'
+"use client";
 
-import React from 'react'
+import React from "react";
 
 export default function HotelsStatsSection() {
   const hotels = [
@@ -93,7 +93,7 @@ export default function HotelsStatsSection() {
         "A 3-star boutique property located in Gandhi Nagar, blending modest comforts with functional value. Offers clean, well-maintained rooms, on-site restaurant, banquet hall for events, free parking, air-conditioning, Wi-Fi, 24-hour front desk, and daily breakfast.",
       rating: "3.8 / 5",
       reviews: "114 reviews (MMT) + 531 ratings (Justdial)",
-      link: "https://www.hotelsannidhi.com/"
+      link: "https://www.hotelsannidhi.com/",
     },
     {
       name: "Hotel Capital Luxury Suites",
@@ -102,7 +102,7 @@ export default function HotelsStatsSection() {
         "A contemporary 3-star hotel situated near Benz Circle, designed for both business and leisure travelers. The property offers stylish rooms with modern interiors, LED TVs, work desks, and comfortable bedding. Guests can enjoy an in-house multi-cuisine restaurant, conference facilities, complimentary Wi-Fi, and 24-hour front desk service.",
       rating: "4.2 / 5",
       reviews: "310 ratings (MMT)",
-      link: "https://www.booking.com/hotel/in/capital-luxury-suites.html"
+      link: "https://www.booking.com/hotel/in/capital-luxury-suites.html",
     },
     {
       name: "Treebo C Plaza",
@@ -111,7 +111,7 @@ export default function HotelsStatsSection() {
         "A budget-friendly 3-star hotel on Bandar Road featuring AC rooms with free Wi-Fi, TV, and essential amenities. Guests are offered complimentary vegetarian breakfast, banquet facilities for small events, and easy access to Vijayawada’s business and shopping hubs.",
       rating: "4.2 / 5",
       reviews: "31 guest ratings (Goibibo)",
-      link: "https://www.treebo.com/hotels-in-vijayawada/treebo-c-plaza-mg-road-bandar-road-503/"
+      link: "https://www.treebo.com/hotels-in-vijayawada/treebo-c-plaza-mg-road-bandar-road-503/",
     },
     {
       name: "Hotel Pride Madhava",
@@ -120,7 +120,7 @@ export default function HotelsStatsSection() {
         "A refined business boutique hotel just off Eluru Road in Srinagar Colony, offering well-appointed rooms with Wi-Fi, LED smart TVs, minibar, and tea/coffee makers. Guests benefit from services like valet parking, 24-hour room service, power backup, laundry, and two banquet halls—ideal for business or event stays.",
       rating: "3.9 – 4.1 / 5",
       reviews: "83 (MMT) + 1,607 (Justdial)",
-      link: "https://www.makemytrip.com/hotels/hotel_pride_madhava-details-vijaywada.html"
+      link: "https://www.makemytrip.com/hotels/hotel_pride_madhava-details-vijaywada.html",
     },
     {
       name: "Hotel Centre Side",
@@ -129,7 +129,7 @@ export default function HotelsStatsSection() {
         "A centrally located 3-star boutique hotel near Eluru Road, featuring stylish AC rooms with Wi-Fi and in-house dining. Offers modern conveniences such as banquet and boardroom facilities, free parking, and warm, attentive service—ideal for both business and family stays.",
       rating: "4.3 / 5",
       reviews: "586 guest ratings (MMT) + ~1,870 reviews (Google/Adanione)",
-      link: "https://www.makemytrip.com/hotels/hotel_centre_side-details-vijaywada.html"
+      link: "https://www.makemytrip.com/hotels/hotel_centre_side-details-vijaywada.html",
     },
     {
       name: "Hotel Aira",
@@ -145,23 +145,30 @@ export default function HotelsStatsSection() {
   return (
     <section className="py-12 bg-white text-black">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center text-3xl font-extrabold mb-8" style={{ color: "#EB1165" }}>
+        <h2
+          className="text-center text-3xl font-extrabold mb-8"
+          style={{ color: "#EB1165" }}
+        >
           Accommodation Hotels
         </h2>
 
         <div className="space-y-8">
           {hotels.map((hotel, idx) => {
-            const isReversed = idx % 2 !== 0
+            const isReversed = idx % 2 !== 0;
             return (
               <article
                 key={hotel.name + idx}
                 className={`bg-white shadow-sm rounded-lg overflow-hidden border border-gray-100`}
               >
-                <div className={`md:flex ${isReversed ? 'md:flex-row-reverse' : 'md:flex-row'} items-center`}>
+                <div
+                  className={`md:flex ${
+                    isReversed ? "md:flex-row-reverse" : "md:flex-row"
+                  } items-center`}
+                >
                   {/* Image */}
                   <div className="md:w-5/12 w-full">
                     <img
-                      src={`/images/${hotel.image}`}
+                      src={`${hotel.image}`}
                       alt={hotel.name}
                       loading="lazy"
                       className="w-full h-56 md:h-48 object-cover"
@@ -171,16 +178,22 @@ export default function HotelsStatsSection() {
                   {/* Content */}
                   <div className="md:w-7/12 w-full p-5">
                     <h3 className="text-xl font-semibold mb-2">{hotel.name}</h3>
-                    <p className="text-sm text-gray-700 mb-4">{hotel.description}</p>
+                    <p className="text-sm text-gray-700 mb-4">
+                      {hotel.description}
+                    </p>
 
                     <div className="flex flex-wrap items-center gap-6 mb-4">
                       <div>
-                        <div className="text-sm font-semibold">{hotel.rating}</div>
+                        <div className="text-sm font-semibold">
+                          {hotel.rating}
+                        </div>
                         <div className="text-xs text-gray-500">Rating</div>
                       </div>
 
                       <div>
-                        <div className="text-sm font-semibold">{hotel.reviews}</div>
+                        <div className="text-sm font-semibold">
+                          {hotel.reviews}
+                        </div>
                         <div className="text-xs text-gray-500">Reviews</div>
                       </div>
                     </div>
@@ -190,11 +203,15 @@ export default function HotelsStatsSection() {
                         href={hotel.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`inline-block px-4 py-2 rounded-md text-sm font-medium ${hotel.link === "#" ? 'opacity-60 cursor-not-allowed' : ''}`}
+                        className={`inline-block px-4 py-2 rounded-md text-sm font-medium ${
+                          hotel.link === "#"
+                            ? "opacity-60 cursor-not-allowed"
+                            : ""
+                        }`}
                         style={{
                           backgroundColor: "#EB1165",
                           color: "#fff",
-                          border: "1px solid #EB1165"
+                          border: "1px solid #EB1165",
                         }}
                         aria-disabled={hotel.link === "#"}
                       >
@@ -204,10 +221,10 @@ export default function HotelsStatsSection() {
                   </div>
                 </div>
               </article>
-            )
+            );
           })}
         </div>
       </div>
     </section>
-  )
+  );
 }

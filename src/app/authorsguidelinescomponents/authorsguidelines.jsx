@@ -1,130 +1,96 @@
 "use client";
 
 export default function AuthorGuidelinesIconic() {
+  const topics = [
+    "Quantum Computing in AI",
+    "Explainable AI and Ethical AI",
+    "AI for Social Good",
+    "Fuzzy Systems and Applications",
+    "Evolutionary Algorithms and Swarm Intelligence",
+    "Neural Networks and Cognitive Computing",
+    "Intelligent Decision Support Systems",
+    "Computational Intelligence in Data Mining",
+    "Computational Neuroscience",
+    "Assistive Technologies for Differentely-abled Individuals",
+    "AI for Accessibility and Inclusive Design",
+    "Smart Devices and Ubiquitous Computing",
+    "Blockchain Applications in AI and IoT",
+    "Augmented and Virtual Reality in Intelligent Systems",
+    "Internet of Things (IoT) and Smart Cities",
+    "Cybersecurity and Privacy in AI Systems",
+    "Human-Computer Interaction and User Experience",
+    "Autonomous Vehicles and Robotics",
+    "Applications of AI",
+  ];
+
   return (
-    <div
-      className="min-h-screen bg-white py-8 px-6"
-      style={{
-        fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-        color: "#2c3e50",
-      }}
-    >
-      <div className="max-w-[1200px] mx-auto">
-        {/* FORCE single row on md+ and prevent wrapping so RIGHT column sits level with LEFT */}
-        <div className="flex flex-col md:flex-row md:flex-nowrap gap-6 items-start">
-          {/* left strip - CALL FOR PAPERS (keeps original width 45%) */}
-          <div className="md:w-[45%]" style={{ flex: "0 0 45%" }}>
-            <div className="flex items-center gap-3 mb-3">
-              <div className="w-10 h-10 rounded-lg bg-[#EB1165] flex items-center justify-center text-white font-bold">
+    <div className="min-h-screen bg-white py-12 px-6 text-[#2c3e50]">
+      <div className="max-w-[1200px] mx-auto space-y-16">
+        {/* ------------------- CALL FOR PAPERS + SUBMISSION GUIDELINES ------------------- */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          {/* LEFT — CALL FOR PAPERS */}
+          <div className="space-y-4">
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-xl bg-[#EB1165] text-white font-bold text-lg flex items-center justify-center shadow-md">
                 CF
               </div>
-              <div>
-                <div className="text-[#EB1165] font-extrabold uppercase">
-                  CALL FOR PAPERS
-                </div>
-              </div>
+              <h2 className="text-xl font-extrabold text-[#EB1165] uppercase tracking-wide">
+                CALL FOR PAPERS
+              </h2>
             </div>
-            <div className="text-sm text-gray-700">
+
+            <p className="text-sm leading-relaxed">
               Original contributions based on the results of research and
               developments are solicited. Prospective authors are requested to
               submit their papers in not more than 8 pages, prepared in Taylor &
               Francis publishers, UK paper format. All the accepted and
               presented papers will be published in one of the Taylor &
               Francis/AIP/IOP/Springer.
-            </div>
-            <br />
-            <div className="text-sm text-gray-700 mb-2">
+            </p>
+
+            <p className="text-sm leading-relaxed">
               ICRAIC2IT-2026 invites academicians, researchers, industry
               professionals for submitting their original, previously
               unpublished and high quality research papers. The conference will
               be focused on addressing research challenges in the following
               fields, but are not limited to:
-            </div>
-            <br />
-            <div
-              className="text-xs text-gray-600 bg-[#fafafa] p-2 rounded"
-              style={{ borderLeft: "4px solid #EB1165" }}
-            >
+            </p>
+
+            <div className="text-xs bg-gray-50 border-l-4 border-[#EB1165] p-3 rounded-md">
               <strong>Conference:</strong> ICRAIC2IT-2026 |{" "}
-              <strong>Format:</strong> Max 8 Pages | <strong>Publisher:</strong>
+              <strong>Format:</strong> Max 8 Pages | <strong>Publisher:</strong>{" "}
               Taylor & Francis/AIP/IOP/Springer
             </div>
           </div>
 
-          {/* right strip: TOPICS FOR SUBMISSIONS (keeps original width 55% and original chip size) */}
-          <div className="md:w-[55%]" style={{ flex: "0 0 55%" }}>
-            <div className="flex items-center gap-3 mb-3">
-              <div className="w-10 h-10 rounded-lg bg-[#EB1165] flex items-center justify-center text-white font-bold">
-                TP
-              </div>
-              <div>
-                <div className="text-[#EB1165] font-extrabold uppercase">
-                  TOPICS FOR SUBMISSIONS
-                </div>
-                
-              </div>
-            </div>
-
-            <div
-              className="flex flex-wrap gap-2"
-              style={{ alignContent: "flex-start" }}
-            >
-              {[
-                "Quantum Computing in AI",
-                "Explainable AI and Ethical AI",
-                "AI for Social Good",
-                "Fuzzy Systems and Applications",
-                "Evolutionary Algorithms and Swarm Intelligence",
-                "Neural Networks and Cognitive Computing",
-                "Intelligent Decision Support Systems",
-                "Computational Intelligence in Data Mining",
-                "Computational Neuroscience",
-                "Assistive Technologies for Differentely-abled Individuals",
-                "AI for Accessibility and Inclusive Design",
-                "Smart Devices and Ubiquitous Computing",
-                "Blockchain Applications in AI and IoT",
-                "Augmented and Virtual Reality in Intelligent Systems",
-                "Internet of Things (IoT) and Smart Cities",
-                "Cybersecurity and Privacy in AI Systems",
-                "Human-Computer Interaction and User Experience",
-                "Autonomous Vehicles and Robotics",
-                "Applications of AI",
-              ].map((t) => (
-                <span
-                  key={t}
-                  className="text-xs py-1 px-3 rounded-full border text-gray-700"
-                  style={{
-                    background: "#fff",
-                    display: "inline-flex",
-                    alignItems: "center",
-                  }}
-                >
-                  {t}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* guidelines + dates in a compact two-column horizontal line (no boxes) */}
-        <div className="mt-5 flex flex-col md:flex-row gap-6">
-          <div style={{ flex: "1 1 65%" }}>
-            <div className="flex items-center gap-3 mb-2">
-              <div className="w-8 h-8 bg-[#EB1165] rounded text-white flex items-center justify-center font-bold">
+          {/* RIGHT — PAPER SUBMISSION GUIDELINES */}
+          <div className="space-y-4">
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-xl bg-[#EB1165] text-white font-bold text-lg flex items-center justify-center shadow-md">
                 PG
               </div>
-              <div className="text-[#EB1165] font-bold uppercase">
+              <h2 className="text-xl font-extrabold text-[#EB1165] uppercase tracking-wide">
                 PAPER SUBMISSION GUIDELINES
-              </div>
+              </h2>
             </div>
-            <ol className="list-decimal ml-6 text-sm space-y-2">
+
+            <ol className="list-decimal ml-6 text-sm space-y-2 leading-relaxed">
               <li>Background, Motivation and Objective</li>
               <li>Statement of Contribution, Methodology</li>
               <li>Results, Discussions and Conclusions</li>
               <li>
                 Maximum number of pages is 8 in 8.5 × 11-inch paper
-                single-column template. The Paper format will be:
-                http://aip.scitation.org/apc/authors/download
+                single-column template.
+              </li>
+              <li>
+                The Paper format will be:
+                <a
+                  href="http://aip.scitation.org/apc/authors/download"
+                  target="_blank"
+                  className="text-blue-600 underline hover:text-blue-800"
+                >
+                  http://aip.scitation.org/apc/authors/download
+                </a>
               </li>
               <li>
                 Language: English is the official language of the conference.
@@ -138,36 +104,77 @@ export default function AuthorGuidelinesIconic() {
               </li>
             </ol>
           </div>
+        </div>
 
-          <div style={{ flex: "0 0 35%" }}>
-            <div className="flex items-center gap-3 mb-2">
-              <div className="w-8 h-8 bg-[#EB1165] rounded text-white flex items-center justify-center font-bold">
+        {/* ----------------------- TOPICS + IMPORTANT DATES ----------------------- */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          {/* LEFT — TOPICS FOR SUBMISSIONS */}
+          <div className="space-y-4">
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-xl bg-[#EB1165] text-white font-bold text-lg flex items-center justify-center shadow-md">
+                TP
+              </div>
+              <h2 className="text-xl font-extrabold uppercase tracking-wide text-[#EB1165]">
+                TOPICS FOR SUBMISSIONS
+              </h2>
+            </div>
+
+            {/* 4 per row grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              {topics.map((t) => (
+                <div
+                  key={t}
+                  className="text-xs px-3 py-2 bg-gray-100 border border-gray-200 rounded-md shadow-sm hover:bg-gray-200 transition"
+                >
+                  • {t}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* RIGHT — IMPORTANT DATES TABLE */}
+          <div className="space-y-4">
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-xl bg-[#EB1165] text-white font-bold text-lg flex items-center justify-center shadow-md">
                 ID
               </div>
-              <div className="text-[#EB1165] font-bold uppercase">
-                Important Dates
-              </div>
+              <h2 className="text-xl font-extrabold uppercase tracking-wide text-[#EB1165]">
+                IMPORTANT DATES
+              </h2>
             </div>
-            <div className="text-sm space-y-2">
-              <div>
-                <strong>Submission deadline for Full-Text Paper:</strong> April
-                05, 2026
-              </div>
-              <div>
-                <strong>Notification of Acceptance/Rejection:</strong> April 15,
-                2026
-              </div>
-              <div>
-                <strong>
-                  Last date for Camera-ready Full paper submission (with
-                  modification) & Registration with Fees:
-                </strong>{" "}
-                April 30, 2026
-              </div>
-              <div>
-                <strong>Conference Dates:</strong> May 08 - 09, 2026
-              </div>
-            </div>
+
+            <table className="w-full text-sm border border-gray-200 rounded-md overflow-hidden shadow">
+              <tbody>
+                <tr className="border-b">
+                  <td className="p-3 font-semibold bg-gray-50">
+                    Submission deadline for Full-Text Paper:
+                  </td>
+                  <td className="p-3 text-right">April 05, 2026</td>
+                </tr>
+
+                <tr className="border-b">
+                  <td className="p-3 font-semibold bg-gray-50">
+                    Notification of Acceptance/Rejection:
+                  </td>
+                  <td className="p-3 text-right">April 15, 2026</td>
+                </tr>
+
+                <tr className="border-b">
+                  <td className="p-3 font-semibold bg-gray-50">
+                    Last date for Camera-ready Full paper submission (with
+                    modification) & Registration with Fees:
+                  </td>
+                  <td className="p-3 text-right">April 30, 2026</td>
+                </tr>
+
+                <tr>
+                  <td className="p-3 font-semibold bg-gray-50">
+                    Conference Dates:
+                  </td>
+                  <td className="p-3 text-right">May 08 - 09, 2026</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>

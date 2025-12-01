@@ -125,7 +125,7 @@ export default function CommitteesPage() {
           >
             {/* Title Bar */}
             <div
-              className="font-bold text-lg mb-2 pb-1 border-b"
+              className="font-bold text-1xl mb-2 pb-1 border-b"
               style={{ borderColor: "#EB1165", color: "#EB1165" }}
             >
               {sec.title}
@@ -137,7 +137,7 @@ export default function CommitteesPage() {
                 <p
                   key={i}
                   className="list-disc list-item"
-                  style={{ borderColor: "#EB1165", }}
+                  style={{ borderColor: "#EB1165" }}
                 >
                   {m}
                 </p>

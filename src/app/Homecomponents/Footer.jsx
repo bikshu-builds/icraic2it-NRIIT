@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
 
 export default function Footer() {
   const navLinks = [
@@ -78,16 +78,16 @@ export default function Footer() {
             Follow Us
           </h3>
           <div className="flex gap-4 mt-2">
-            <a href="#" className="hover:text-[#EB1165]">
+            <a href="https://www.facebook.com/NRIInstituteOfTechnology/" className="hover:text-[#EB1165]">
               <Facebook size={20} />
             </a>
-            <a href="#" className="hover:text-[#EB1165]">
+            <a href="https://x.com/OfNri" className="hover:text-[#EB1165]">
               <Twitter size={20} />
             </a>
-            <a href="#" className="hover:text-[#EB1165]">
-              <Instagram size={20} />
+            <a href="https://www.youtube.com/channel/UCjp3K64XEIqE3G3nAEmdyZQ?view_as=subscriber" className="hover:text-[#EB1165]">
+              <Youtube size={20} />
             </a>
-            <a href="#" className="hover:text-[#EB1165]">
+            <a href="https://www.linkedin.com/company/nri-institute-of-technology-vij/posts/?feedView=all" className="hover:text-[#EB1165]">
               <Linkedin size={20} />
             </a>
           </div>

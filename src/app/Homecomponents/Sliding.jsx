@@ -3,11 +3,12 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  "/image/1.jpg",
+  "/image/5.jpg",
   "/image/2.webp",
   "/image/3.jpg",
   "/image/4.jpg",
-  "/image/5.jpg",
+  "/image/1.jpg",
+  "/image/6.jpg",
 ];
 
 export default function ImageSlider() {
